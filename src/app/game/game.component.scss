@@ -1,0 +1,70 @@
+//class selectors
+.defaultText {
+    font-size: 30px;
+    color: white;
+    margin: 50px 0;
+}
+
+.start-game-button {
+    font-size: 20px;
+}
+
+.players {
+    font-size: 30px;
+    font-weight: bold;
+    outline: auto;
+    padding: 5px;
+}
+
+.main-container {
+    .gameboard {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .player-one {
+            p {
+                color: green;
+            }
+        }
+
+        .player-two {
+            p {
+                color: red;
+            }
+        }
+
+        .gamefield {
+            max-width: 300px;
+
+            .subfield {
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                border: 1px solid white;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &.player-one {
+                    background-image: url(../../assets/x.png);
+                }
+
+                &.player-two {
+                    background-image: url(../../assets/o.png);
+                }
+            }
+        }
+    }
+}
+
+//id selectors
+#title {
+    font-weight: 1000;
+    font-size: 100px;
+    text-align: center;
+    margin: 50px 0;
+    color: white
+}
+
+//others
